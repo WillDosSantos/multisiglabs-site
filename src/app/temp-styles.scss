@@ -9,6 +9,32 @@ body {
     align-items: center;
     max-width: 800px;
     margin: 12em auto 0 auto;
+    position: relative;
+}
+
+.tagline {
+    background-color: #1E1E1E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0px;
+    padding: 0 1em;
+    position: absolute;
+    top: 200px;
+    right: 130px;
+}
+
+button {
+    border: 1px solid #9296BB;
+    padding: 8px 39px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 }
 
 .timeline {
@@ -23,10 +49,16 @@ body {
         margin-top: 8em;
         .event-details {
             position: absolute;
-            left: -95px;
-            top: -30px;
+            left: -113px;
+            top: -48px;
             display: flex;
-            column-gap: 8px;
+            column-gap: 4px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 109%; /* 17.44px */
+            letter-spacing: 1.76px;
+            text-transform: uppercase;
         }
         &:first-child {
             margin-top: 3em;
@@ -43,12 +75,13 @@ h3 {
 p {
     text-align: left;
     color: rgba(255, 255, 255, 0.60);
-    font-size: 12px;
+    font-size: 13px;
     line-height: 200%;
 }
 
 .event-details {
     display: flex;
+    align-items: center;
 }
 
 .navbar {
@@ -60,4 +93,10 @@ p {
         color: #9296BB;
         padding: 0 2em;
     }
+}
+
+.event-logo-container {
+    background-color: #191C31;
+    max-width: 60px;
+    padding: 1em;
 }
