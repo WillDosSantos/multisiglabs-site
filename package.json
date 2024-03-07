@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "boxicons": "^2.1.4",
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
     "sal.js": "^0.8.5",
     "sass": "^1.69.5"
   },

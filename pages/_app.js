@@ -7,6 +7,7 @@ import { Inter } from 'next/font/google'
 import 'src/app/globals.css' // Adjust path if necessary
 import 'src/app/temp-styles.scss';  // Adjust path if necessary
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
 
@@ -17,7 +18,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <div lang="en">
       <Navbar />
-      <Component {...pageProps} />
+      <div className='content-wrap'>
+        <Component {...pageProps} />
+      </div>
+      <Footer />
     </div>
   );
 }
