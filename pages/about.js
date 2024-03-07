@@ -59,7 +59,7 @@ export default function About() {
         </div>
         <div style={{ margin: "4em 0" }} className="main-content">
             <MSLOutlineLogo/>
-          <div className="header header--center" style={{ maxWidth: "530px", margin: "0 auto" }}>
+          <div className="header header--center" data-aos="fade-up" data-aos-duration="1200" style={{ maxWidth: "530px", margin: "0 auto" }}>
             <h1>Our team</h1>
             <p>
             Our strength lies in our diverse mindsets. A collective of remarkable talent, our team spans across development, creativity, and marketing, all working in harmony to lead the charge in emerging technologies.
@@ -154,10 +154,22 @@ export default function About() {
         <div style={{ margin: "4em 0" }} className="main-content">
           <div className="header" style={{ maxWidth: "530px", flexDirection: "column", alignItems: "flex-start" }}>
             <h1>Investing Partners</h1>
-            <p>
+            <p style={{ maxWidth: "350px" }}>
             We carefully consider our investing partners and join forces with the best in the industry.
             </p>
           </div>
+          <div className="col-container col-4 investor-logos" >
+            <img src="/investor-logos/Logo-Investor-AlphaCrypto.svg" data-aos="fade-up" data-aos-duration="1200" alt="AlphaCrypto Logo" />
+            <img src="/investor-logos/Logo-Investor-Fintech-Collective.png" data-aos="fade-up" data-aos-duration="1300" alt="Finetech Collective Logo" />
+            <img src="/investor-logos/Logo-Investor-Republic-Capital.svg" data-aos="fade-up" data-aos-duration="1400" alt="Republic Capital Logo" />
+            <img src="/investor-logos/Logo-Investor.svg" data-aos="fade-up" data-aos-duration="1500" alt="Logo" />
+            <img src="/investor-logos/Logo-Investors-Avalaunch.svg" data-aos="fade-up" data-aos-duration="1600" alt="Avalaunch Logo" />
+            <img src="/investor-logos/Logo-Investors-Builder.png" data-aos="fade-up" data-aos-duration="1700" alt="Builder Logo" />
+            <img src="/investor-logos/Logo-Investors-CoinFund.png" data-aos="fade-up" data-aos-duration="1800" alt="CoinFund Logo" />
+            <img src="/investor-logos/Logo-Investors-Framework.svg" data-aos="fade-up" data-aos-duration="1900" alt="Framework Logo" />
+            <img src="/investor-logos/Logo-Investors-GBV.svg" data-aos="fade-up" data-aos-duration="2000" alt="GBV Logo" />
+            <img src="/investor-logos/Logo-Investors-Silverstone.svg" data-aos="fade-up" data-aos-duration="2100" alt="Silverstone Logo" />
+            </div>
         </div>
       </div>
     </div>

@@ -232,6 +232,11 @@ body {
   gap: 20px;
 }
 
+.col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
 .col-content {
   h5 {
     margin-bottom: 1em;
@@ -243,7 +248,7 @@ body {
 }
 
 //MSL Logo animation
-.logo-path {
+.animate .logo-path {
   stroke-width: 1; /* Example stroke width */
   stroke: url(#paint0_linear_532_414);
   stroke-dasharray: 1000;
@@ -304,4 +309,13 @@ body {
 
 .company-category {
   margin: 8em 0;
+}
+
+.investor-logos {
+    margin-top: 4em;
+    row-gap: 8em;
+    img {
+        max-width: 180px;
+        margin: 0 auto;
+    }
 }
