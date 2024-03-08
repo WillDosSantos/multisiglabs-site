@@ -146,7 +146,7 @@ export default function About() {
                     <h4>Head of Marketing</h4>
                 </div>
                 <div className="card">
-                    <h3>J.F. </h3>
+                    <h3>J.F. Saine</h3>
                     <h4>Head of Defi</h4>
                 </div>
             </div>
