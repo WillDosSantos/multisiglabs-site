@@ -1,5 +1,4 @@
-import { BiBookOpen, BiAtom } from "react-icons/bi";
-import { IconContext } from "react-icons";
+import { BiBookOpen, BiAtom, BiEnvelope } from "react-icons/bi";
 import Link from "next/link";
 
 function Navbar() {
@@ -31,9 +30,9 @@ function Navbar() {
           <li>
             <Link href="/products" style={{ display: "flex", alignItems: "center" }}>
               <span style={{ marginRight: "0.5em" }}>
-                <IconContext.Provider value={{ size: "2em" }}>
+             
                   <BiAtom />
-                </IconContext.Provider>
+            
               </span>
               Products
             </Link>
@@ -41,9 +40,9 @@ function Navbar() {
           <li>
             <Link href="/about" style={{ display: "flex", alignItems: "center" }}>
               <span style={{ marginRight: "0.5em" }}>
-                <IconContext.Provider value={{ size: "2em" }}>
+          
                   <BiBookOpen />
-                </IconContext.Provider>
+          
               </span>
               About
             </Link>
@@ -53,9 +52,11 @@ function Navbar() {
 
       <a
         className="btn btn--large"
+        style={{ display: "flex", alignItems: "center", columnGap: "10px" }}
         href="mailto:hello@multisiglabs.org?subject=New%20Message%20for%20Multisig%20Labs%20Team"
       >
-        Connect
+        <BiEnvelope/>
+        Contact
       </a>
     </div>
   );

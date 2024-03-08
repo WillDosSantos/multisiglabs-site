@@ -1,5 +1,4 @@
 import { BiBookOpen, BiEnvelope, BiMapPin, BiPhone } from "react-icons/bi";
-import { IconContext } from "react-icons";
 
 function Footer() {
   return (
@@ -38,24 +37,19 @@ function Footer() {
             <div class="list-header">Contact</div>
             <ul className="footer-details">
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "2em" }}>
-                  <BiMapPin />
-                </IconContext.Provider>
+                <BiMapPin />
                 2000 Hughes Landing Blvd.
                 <br />
                 The Woodlans, TX. 77034
               </li>
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "2em" }}>
+                <a style={{ display: "flex", columnGap: "10px" }} href="mailto:hello@multisiglabs.org?subject=New%20Message%20for%20Multisig%20Labs%20Team">
                   <BiEnvelope />
-                </IconContext.Provider>
-                hello@multisiglabs.org
+                  hello@multisiglabs.org
+                </a>
               </li>
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "2em" }}>
-                  <BiPhone />
-                </IconContext.Provider>
-                1 832-299-5626
+                <BiPhone />1 832-299-5626
               </li>
             </ul>
           </li>

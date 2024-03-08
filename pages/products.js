@@ -6,7 +6,7 @@ import {
   BiGame,
   BiHive,
 } from "react-icons/bi";
-import { IconContext } from "react-icons";
+import Link from "next/link";
 
 export default function Products() {
   const [openStates, setOpenStates] = useState({ card1: false, card2: false });
@@ -55,6 +55,7 @@ export default function Products() {
                 Subnet MarketPlace where validators and Subnets can come
                 together.
               </p>
+              <Link href="https://gogopool.com" style={{ display: "flex", alignItems: "center" }}>Visit GoGoPool.com</Link>
             </div>
         
         </div>
@@ -80,6 +81,7 @@ export default function Products() {
                 Subnet MarketPlace where validators and Subnets can come
                 together.
               </p>
+              <Link href="https://pandasia.io" style={{ display: "flex", alignItems: "center" }}>Visit Pandasia.io</Link>
             </div>
     
         </div>
