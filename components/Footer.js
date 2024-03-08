@@ -40,7 +40,7 @@ function Footer() {
                 <BiMapPin />
                 2000 Hughes Landing Blvd.
                 <br />
-                The Woodlans, TX. 77034
+                The Woodlands, TX. 77380
               </li>
               <li className="footer-details_border">
                 <a style={{ display: "flex", columnGap: "10px" }} href="mailto:hello@multisiglabs.org?subject=New%20Message%20for%20Multisig%20Labs%20Team">
