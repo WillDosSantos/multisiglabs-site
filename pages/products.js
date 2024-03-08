@@ -12,7 +12,7 @@ export default function Products() {
   const [openStates, setOpenStates] = useState({ card1: false, card2: false });
 
   const toggleDetails = (cardId) => {
-    setOpenStates((prev) => ({ ...prev, [cardId]: !prev[cardId] }));
+    setOpenStates(prev => ({ ...prev, [cardId]: !prev[cardId] }));
   };
   return (
     <div className="container products-page">
@@ -31,17 +31,19 @@ export default function Products() {
       </div>
       <div
         className="main-content"
-        style={{ position: "relative", zIndex: "2" }}
+        style={{ position: "relative", zIndex: "2", minHeight: "500px" }}
       >
-        <div className="card">
+        <div className="card" data-aos="fade-up" data-aos-duration="1200">
           <div className="card--header" onClick={() => toggleDetails("card1")}>
             <img src="/ggp-logo-white.svg" alt="GGP Logo" />
-            <IconContext.Provider value={{ size: "2em", color: "#FF7D05" }}>
-              {openStates.card1 ? <BiChevronRight /> : <BiChevronRight />}
-            </IconContext.Provider>
+            <div className={`chevron-down-icon ${openStates.card1 ? 'rotate-icon' : ''}`}>
+      
+              <BiChevronRight />
+       
+            </div>
           </div>
-          {openStates.card1 && (
-            <div className="card--details">
+          
+            <div className={`card--details ${openStates.card1 ? 'open' : ''}`}>
               <p>
                 GoGopool is a decentralized liquid staking protocol built to
                 grow Avalanche Subnets. We are focused on our mission to bring
@@ -54,17 +56,19 @@ export default function Products() {
                 together.
               </p>
             </div>
-          )}
+        
         </div>
-        <div className="card">
+        <div className="card" data-aos="fade-up" data-aos-duration="1200" style={{ marginTop: "3em" }}>
           <div className="card--header" onClick={() => toggleDetails("card2")}>
             <img src="/pandasia.svg" alt="GGP Logo" />
-            <IconContext.Provider value={{ size: "2em", color: "#FF7D05" }}>
+            <div className={`chevron-down-icon ${openStates.card2 ? 'rotate-icon' : ''}`}>
+           
               {openStates.card2 ? <BiChevronRight /> : <BiChevronRight />}
-            </IconContext.Provider>
+       
+            </div>
           </div>
-          {openStates.card2 && (
-            <div className="card--details">
+          
+            <div className={`card--details ${openStates.card2 ? 'open' : ''}`}>
               <p>
                 GoGopool is a decentralized liquid staking protocol built to
                 grow Avalanche Subnets. We are focused on our mission to bring
@@ -77,7 +81,7 @@ export default function Products() {
                 together.
               </p>
             </div>
-          )}
+    
         </div>
       </div>
     </div>

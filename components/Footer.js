@@ -38,7 +38,7 @@ function Footer() {
             <div class="list-header">Contact</div>
             <ul className="footer-details">
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "1.5em" }}>
+                <IconContext.Provider value={{ size: "2em" }}>
                   <BiMapPin />
                 </IconContext.Provider>
                 2000 Hughes Landing Blvd.
@@ -46,13 +46,13 @@ function Footer() {
                 The Woodlans, TX. 77034
               </li>
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "1.5em" }}>
+                <IconContext.Provider value={{ size: "2em" }}>
                   <BiEnvelope />
                 </IconContext.Provider>
                 hello@multisiglabs.org
               </li>
               <li className="footer-details_border">
-                <IconContext.Provider value={{ size: "1.5em" }}>
+                <IconContext.Provider value={{ size: "2em" }}>
                   <BiPhone />
                 </IconContext.Provider>
                 1 832-299-5626

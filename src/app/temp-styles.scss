@@ -233,9 +233,9 @@ body {
 }
 
 .col-4 {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-  }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 .col-content {
   h5 {
@@ -312,33 +312,38 @@ body {
 }
 
 .investor-logos {
-    margin-top: 4em;
-    row-gap: 8em;
-    img {
-        max-width: 180px;
-        margin: 0 auto;
-    }
+  margin-top: 4em;
+  row-gap: 8em;
+  img {
+    max-width: 180px;
+    margin: 0 auto;
+  }
 }
 
 .card--header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
-.card {
-    overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease;
+.card--details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.card--details.open {
+  max-height: 500px; /* Adjust this based on your content's needs */
+  opacity: 1;
+}
+
+.chevron-down-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.rotate-icon {
+    transform: rotate(0deg);
   }
-  
-  .card--details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    }
-    
-    .card--details.open {
-    max-height: 1000px; /* Adjust as needed to fit content */
-    transition: max-height 0.5s ease-in;
-    }
