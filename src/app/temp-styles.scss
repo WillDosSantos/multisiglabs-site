@@ -319,3 +319,26 @@ body {
         margin: 0 auto;
     }
 }
+
+.card--header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease;
+  }
+  
+  .card--details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    }
+    
+    .card--details.open {
+    max-height: 1000px; /* Adjust as needed to fit content */
+    transition: max-height 0.5s ease-in;
+    }

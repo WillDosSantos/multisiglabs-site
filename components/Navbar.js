@@ -31,7 +31,7 @@ function Navbar() {
           <li>
             <Link href="/products" style={{ display: "flex", alignItems: "center" }}>
               <span style={{ marginRight: "0.5em" }}>
-                <IconContext.Provider value={{ size: "2em" }}>
+                <IconContext.Provider value={{ size: "24px" }}>
                   <BiAtom />
                 </IconContext.Provider>
               </span>
@@ -41,7 +41,7 @@ function Navbar() {
           <li>
             <Link href="/about" style={{ display: "flex", alignItems: "center" }}>
               <span style={{ marginRight: "0.5em" }}>
-                <IconContext.Provider value={{ size: "2em" }}>
+                <IconContext.Provider value={{ size: "24px" }}>
                   <BiBookOpen />
                 </IconContext.Provider>
               </span>
