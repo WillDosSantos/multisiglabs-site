@@ -24,7 +24,7 @@ export default function About() {
       </div>
       <div className="main-content" style={{ position: 'relative', zIndex: '2' }}>
         <div style={{ margin: "4em 0" }} className="col-container col-2">
-          <div className="col-left">
+          <div className="col-left" style={{ position: "relative" }}>
             <img
               data-aos="fade-right"
               data-aos-duration="1200"
@@ -32,6 +32,7 @@ export default function About() {
               alt="Picture of Steven Gates, CEO"
               style={{ maxWidth: "412px" }}
             />
+            <span style={{ position: "absolute", right: "100px", bottom: "10px" }}>Steven Gates, CEO</span>
           </div>
           <div className="col-right col-content" data-aos="fade-left"
               data-aos-duration="1200">
