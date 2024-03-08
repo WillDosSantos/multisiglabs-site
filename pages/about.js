@@ -122,7 +122,7 @@ export default function About() {
                     <h4>Sr. Engineer</h4>
                 </div>
                 <div className="card">
-                    <h3>Chandler Lofland</h3>
+                    <h3>Chandler</h3>
                     <h4>Back-End Engineer</h4>
                 </div>
                 <div className="card">
