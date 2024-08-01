@@ -23,16 +23,16 @@ export default function About() {
         </div>
       </div>
       <div className="main-content" style={{ position: 'relative', zIndex: '2' }}>
-        <div style={{ margin: "4em 0" }} className="col-container col-2">
+        <div style={{ margin: "0" }} className="col-2 lg:flex-row flex-col flex">
           <div className="col-left" style={{ position: "relative" }}>
             <img
               data-aos="fade-right"
               data-aos-duration="1200"
               src="steve-pic.png"
               alt="Picture of Steven Gates, CEO"
-              style={{ maxWidth: "412px" }}
+              className="max-w-[412px] w-full mb-4"
             />
-            <span style={{ position: "absolute", right: "100px", bottom: "10px" }}>Steven Gates, CEO</span>
+            <span>Steven Gates, CEO</span>
           </div>
           <div className="col-right col-content" data-aos="fade-left"
               data-aos-duration="1200">
@@ -62,7 +62,7 @@ export default function About() {
             <MSLOutlineLogo/>
           <div className="header header--center" data-aos="fade-up" data-aos-duration="1200" style={{ maxWidth: "530px", margin: "0 auto" }}>
             <h1>Our team</h1>
-            <p>
+            <p className="lg:text-center text-left">
             Our strength lies in our diverse mindsets. A collective of remarkable talent, our team spans across development, creativity, and marketing, all working in harmony to lead the charge in emerging technologies.
             </p>
            
@@ -76,7 +76,7 @@ export default function About() {
                 </div>
                 <h5>LEADERSHIP</h5>
             </div>
-            <div className="col-container col-2">
+            <div className="lg:grid-cols-2 grid gap-8">
                 <div className="card">
                     <h3>Steven Gates</h3>
                     <h4>CEO & Co. Founder</h4>
@@ -112,7 +112,7 @@ export default function About() {
                 </div>
                 <h5>Engineering</h5>
             </div>
-            <div className="col-container col-2">
+            <div className="lg:grid-cols-2 grid gap-8">
                 <div className="card">
                     <h3>Julie Aichinger</h3>
                     <h4>Sr. Engineer</h4>
@@ -140,7 +140,7 @@ export default function About() {
                 </div>
                 <h5>Marketing & Business</h5>
             </div>
-            <div className="col-container col-2">
+            <div className="lg:grid-cols-2 grid gap-8">
                 <div className="card">
                     <h3>Christopher Stephens</h3>
                     <h4>Head of Marketing</h4>
@@ -159,7 +159,7 @@ export default function About() {
             We carefully consider our investing partners and join forces with the best in the industry.
             </p>
           </div>
-          <div className="col-container col-4 investor-logos" >
+          <div className="investor-logos grid lg:flex-row flex-col flex lg:grid-cols-4" >
             <img src="/investor-logos/Logo-Investor-AlphaCrypto.svg" data-aos="fade-up" data-aos-duration="1200" alt="AlphaCrypto Logo" />
             <img src="/investor-logos/Logo-Investor-Fintech-Collective.png" data-aos="fade-up" data-aos-duration="1300" alt="Finetech Collective Logo" />
             <img src="/investor-logos/Logo-Investor-Republic-Capital.svg" data-aos="fade-up" data-aos-duration="1400" alt="Republic Capital Logo" />

@@ -7,7 +7,7 @@ function Footer() {
       className="footer"
     >
       <div
-        className="footer-nav"
+        className="footer-nav flex flex-col lg:flex-row"
       >
         <img
           data-aos="fade-up"
@@ -16,10 +16,11 @@ function Footer() {
           style={{ maxWidth: "272px" }}
         />
         <ul
+        className="flex flex-col ml-0 lg:flex-row mt-20 lg:mt-0 gap-40"
         >
-          <li>
+          <li className="flex flex-col">
             <div className="list-header">Contact</div>
-            <ul className="footer-details">
+            <ul className="footer-details flex flex-col ml-0">
               <li className="footer-details_border">
                 <BiMapPin />
                 2000 Hughes Landing Blvd.
@@ -46,9 +47,9 @@ function Footer() {
               <li>Terms and Conditions</li>
             </ul>
           </li>
-          <li>
+          <li className="f">
             <div className="list-header">Products</div>
-            <ul className="footer-details">
+            <ul className="footer-details flex flex-col ml-0">
               <li>
                 <a href="https://www.gogopool.com/">GoGoPool</a>
               </li>
@@ -59,7 +60,7 @@ function Footer() {
           </li>
           <li>
             <div className="list-header">Company</div>
-            <ul className="footer-details">
+            <ul className="footer-details flex flex-col ml-0">
               <li>
                 <Link href="/about">About</Link>
               </li>
