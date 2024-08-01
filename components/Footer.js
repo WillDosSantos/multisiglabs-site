@@ -5,20 +5,9 @@ function Footer() {
   return (
     <div
       className="footer"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "flex-start",
-      }}
     >
       <div
-        className="nav-left nav-responsive"
-        style={{
-          display: "flex",
-          alignItems: "flex-start",
-          justifyContent: "space-between",
-          width: "100%",
-        }}
+        className="footer-nav"
       >
         <img
           data-aos="fade-up"
@@ -27,15 +16,9 @@ function Footer() {
           style={{ maxWidth: "272px" }}
         />
         <ul
-          style={{
-            display: "flex",
-            alignItems: "flex-start",
-            columnGap: "5em",
-            marginLeft: "8em",
-          }}
         >
           <li>
-            <div class="list-header">Contact</div>
+            <div className="list-header">Contact</div>
             <ul className="footer-details">
               <li className="footer-details_border">
                 <BiMapPin />
@@ -58,13 +41,13 @@ function Footer() {
             </ul>
           </li>
           <li style={{ display: "none" }}>
-            <div class="list-header">Legal</div>
+            <div className="list-header">Legal</div>
             <ul className="footer-details">
               <li>Terms and Conditions</li>
             </ul>
           </li>
           <li>
-            <div class="list-header">Products</div>
+            <div className="list-header">Products</div>
             <ul className="footer-details">
               <li>
                 <a href="https://www.gogopool.com/">GoGoPool</a>
@@ -75,7 +58,7 @@ function Footer() {
             </ul>
           </li>
           <li>
-            <div class="list-header">Company</div>
+            <div className="list-header">Company</div>
             <ul className="footer-details">
               <li>
                 <Link href="/about">About</Link>

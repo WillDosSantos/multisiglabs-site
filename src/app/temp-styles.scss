@@ -80,6 +80,10 @@ p {
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    width: 100%;
   li {
     font-size: 12px;
     text-transform: uppercase;
@@ -132,6 +136,21 @@ a:hover {
   padding: 5em 3em 8em 3em;
   z-index: 2;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .footer-nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%; 
+    ul {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 5em;
+        margin-left: 8em;
+    }
+  }
   .list-header {
     text-transform: uppercase;
     font-weight: bold;
@@ -379,3 +398,89 @@ body {
 .rotate-icon {
     transform: rotate(0deg);
   }
+
+
+//Mobile Nav
+.mobile-navbar {
+    display: none; /* Hidden by default */
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .logo {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .contact-btn {
+    /* Styles for your contact button */
+  }
+  
+  .mobile-menu {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 300px;
+    height: 100vh;
+    background: rgba(47,47,47,.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    transition: .3s;
+    overflow-y: auto;
+    padding-top: 20px;
+    z-index: 90;
+    /* Additional styling */
+  }
+  
+  /* Show the mobile navbar only on tablet and phone widths */
+  @media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    .mobile-navbar {
+      display: flex; /* Show the mobile navbar */
+      svg {
+        font-size: 24px;
+      }
+    }
+  
+    .mobile-menu {
+      display: flex; /* Show the menu when isOpen is true */
+      flex-direction: column;
+      row-gap: 20px;
+      a {
+        padding: 1em;
+      }
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        .footer-nav {
+            flex-direction: column;
+            align-items: flex-start;
+            ul {
+                flex-direction: column;
+            align-items: flex-start;
+            margin: 2em 0 0 0;
+            row-gap: 1em;
+            }
+        }
+    }
+    .content-wrap {
+        padding: 2em;
+    }
+  }
+  

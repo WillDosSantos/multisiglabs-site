@@ -7,12 +7,6 @@ function Navbar() {
   return (
     <div
       className="navbar nav-responsive"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "1em 2em",
-        width: "100%",
-      }}
     >
       <div
         className="nav-left"
