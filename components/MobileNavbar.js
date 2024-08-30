@@ -33,8 +33,8 @@ const MobileNavbar = () => {
         {isOpen && (
           <div className="mobile-menu">
             <Link href="/">Home</Link>
-            <a href="/about">About</a>
-            <a href="/products">Products</a>
+            <Link href="/about">About</Link>
+            <Link href="/products">Products</Link>
           </div>
         )}
       </div>

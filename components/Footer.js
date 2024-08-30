@@ -1,5 +1,6 @@
 import { BiBookOpen, BiEnvelope, BiMapPin, BiPhone } from "react-icons/bi";
 import Link from "next/link";
+import Image from 'next/image';
 
 function Footer() {
   return (
@@ -9,11 +10,12 @@ function Footer() {
       <div
         className="footer-nav flex flex-col lg:flex-row"
       >
-        <img
+        <Image
           data-aos="fade-up"
           src="../msl-logo.svg"
           alt="Multisig Labs Logo"
-          style={{ maxWidth: "272px" }}
+          width={272}
+          height={45}
         />
         <ul
         className="flex flex-col ml-0 lg:flex-row mt-20 lg:mt-0 gap-40"

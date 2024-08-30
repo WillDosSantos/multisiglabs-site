@@ -7,6 +7,7 @@ import {
   BiHive,
 } from "react-icons/bi";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Products() {
   const [openStates, setOpenStates] = useState({ card1: false, card2: false });
@@ -24,7 +25,7 @@ export default function Products() {
         <div className="header--right">
           <p>
             We are community driven. Our team connects with projects and
-            individuals meeting them where they are at. Let’s build something
+            individuals meeting them where they are at. Let&apos;s build something
             great together!
           </p>
         </div>
@@ -35,7 +36,7 @@ export default function Products() {
       >
         <div className="card" data-aos="fade-up" data-aos-duration="1200">
           <div className="card--header" onClick={() => toggleDetails("card1")}>
-            <img src="/ggp-logo-white.svg" alt="GGP Logo" />
+            <Image src="/ggp-logo-white.svg" alt="GGP Logo" width={161} height={46} />
             <div
               className={`chevron-down-icon ${
                 openStates.card1 ? "rotate-icon" : ""
@@ -71,7 +72,7 @@ export default function Products() {
           style={{ marginTop: "3em" }}
         >
           <div className="card--header" onClick={() => toggleDetails("card2")}>
-            <img src="/pandasia.svg" alt="GGP Logo" />
+            <Image src="/pandasia.svg" alt="Pandasia Logo" width={118} height={60} />
             <div
               className={`chevron-down-icon ${
                 openStates.card2 ? "rotate-icon" : ""
@@ -86,7 +87,7 @@ export default function Products() {
               Pandasia is a platform designed to foster the growth of Subnets on
               the Avalanche network by facilitating token airdrops to registered
               Avalanche Validators, offering developers an easy method to reward
-              those dedicated to the chain's success. To kickstart smart
+              those dedicated to the chain&apos;s success. To kickstart smart
               contract testing and compile an initial roster of node operators,
               early registrants will receive a GGP token airdrop. The platform
               enables validators to link their C-chain and P-chain addresses for
